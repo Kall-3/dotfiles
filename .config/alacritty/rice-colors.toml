@@ -1,0 +1,363 @@
+[colors.bright]
+black = "#3d414f"
+blue = "#86aaec"
+cyan = "#93cee9"
+green = "#90ceaa"
+magenta = "#c296eb"
+red = "#dd6777"
+white = "#cbced3"
+yellow = "#ecd3a0"
+
+[colors.cursor]
+cursor = "#a5b6cf"
+text = "#0d0f18"
+
+[colors.normal]
+black = "#3d414f"
+blue = "#86aaec"
+cyan = "#93cee9"
+green = "#90ceaa"
+magenta = "#c296eb"
+red = "#dd6777"
+white = "#cbced3"
+yellow = "#ecd3a0"
+
+[colors.primary]
+background = "#0d0f18"
+foreground = "#a5b6cf"
+
+# [schemes.aline_pencil_light.bright]
+# black = "#212121"
+# blue = "#20bbfc"
+# cyan = "#4fb8cc"
+# green = "#5fd7af"
+# magenta = "#6855de"
+# red = "#fb007a"
+# white = "#51576d"
+# yellow = "#f3e430"
+# 
+# [schemes.aline_pencil_light.cursor]
+# cursor = "#20bbfc"
+# text = "#e5eafe"
+# 
+# [schemes.aline_pencil_light.normal]
+# black = "#212121"
+# blue = "#008ec4"
+# cyan = "#20a5ba"
+# green = "#10a778"
+# magenta = "#523c79"
+# red = "#c30771"
+# white = "#51576d"
+# yellow = "#a89c14"
+# 
+# [schemes.aline_pencil_light.primary]
+# background = "#e5eafe"
+# foreground = "#51576d"
+# 
+# [schemes.andrea_color_scheme.bright]
+# black = "#80859d"
+# blue = "#50bfdc"
+# cyan = "#83edc8"
+# green = "#a1d16c"
+# magenta = "#605692"
+# red = "#c03f61"
+# white = "#b0b0b0"
+# yellow = "#f2be47"
+# 
+# [schemes.andrea_color_scheme.cursor]
+# cursor = "#7a7498"
+# text = "#F5EEE6"
+# 
+# [schemes.andrea_color_scheme.normal]
+# black = "#80859d"
+# blue = "#67d4f1"
+# cyan = "#9bf4d5"
+# green = "#abd77a"
+# magenta = "#7a7498"
+# red = "#c04364"
+# white = "#b0b0b0"
+# yellow = "#ffcc57"
+# 
+# [schemes.andrea_color_scheme.primary]
+# background = "#F5EEE6"
+# foreground = "#6d6a78"
+# 
+# [schemes.cristina_rose_pine.bright]
+# black = "#6f6e85"
+# blue = "#34738e"
+# cyan = "#ebbcba"
+# green = "#9bced7"
+# magenta = "#c3a5e6"
+# red = "#ea6f91"
+# white = "#e0def4"
+# yellow = "#f1ca93"
+# 
+# [schemes.cristina_rose_pine.cursor]
+# cursor = "#c3a5e6"
+# text = "#1f1d29"
+# 
+# [schemes.cristina_rose_pine.normal]
+# black = "#6f6e85"
+# blue = "#34738e"
+# cyan = "#eabbb9"
+# green = "#9bced7"
+# magenta = "#c3a5e6"
+# red = "#ea6f91"
+# white = "#faebd7"
+# yellow = "#f1ca93"
+# 
+# [schemes.cristina_rose_pine.primary]
+# background = "#1f1d29"
+# foreground = "#eaeaea"
+# 
+# [schemes.cynthia_color_scheme.bright]
+# black = "#b3b3b3"
+# blue = "#465b80"
+# cyan = "#385a73"
+# green = "#3f6566"
+# magenta = "#533969"
+# red = "#735771"
+# white = "#e5e5e5"
+# yellow = "#807476"
+# 
+# [schemes.cynthia_color_scheme.cursor]
+# cursor = "#465b80"
+# text = "#e5e5e5"
+# 
+# [schemes.cynthia_color_scheme.normal]
+# black = "#0f1319"
+# blue = "#3f5273"
+# cyan = "#324f66"
+# green = "#375759"
+# magenta = "#543f66"
+# red = "#644d66"
+# white = "#b3b3b3"
+# yellow = "#736871"
+# 
+# [schemes.cynthia_color_scheme.primary]
+# background = "#1f2329"
+# foreground = "#b8bfe5"
+# 
+# [schemes.emilia_tokyo_night.bright]
+# black = "#414868"
+# blue = "#7aa2f7"
+# cyan = "#7dcfff"
+# green = "#9ece6a"
+# magenta = "#bb9af7"
+# red = "#f7768e"
+# white = "#c0caf5"
+# yellow = "#e0af68"
+# 
+# [schemes.emilia_tokyo_night.cursor]
+# cursor = "#bb9af7"
+# text = "#1a1b26"
+# 
+# [schemes.emilia_tokyo_night.normal]
+# black = "#414868"
+# blue = "#7aa2f7"
+# cyan = "#7dcfff"
+# green = "#9ece6a"
+# magenta = "#bb9af7"
+# red = "#f7768e"
+# white = "#787c99"
+# yellow = "#e0af68"
+# 
+# [schemes.emilia_tokyo_night.primary]
+# background = "#1a1b26"
+# foreground = "#c0caf5"
+# 
+# [schemes.isabel_onedark.bright]
+# black = "#5c6370"
+# blue = "#61afef"
+# cyan = "#56b6c2"
+# green = "#98c379"
+# magenta = "#8677cf"
+# red = "#e06c75"
+# white = "#abb2bf"
+# yellow = "#e5c07b"
+# 
+# [schemes.isabel_onedark.cursor]
+# cursor = "#abb2bf"
+# text = "#14171c"
+# 
+# [schemes.isabel_onedark.normal]
+# black = "#5c6370"
+# blue = "#4889be"
+# cyan = "#49919a"
+# green = "#81ae5f"
+# magenta = "#7560d3"
+# red = "#be5046"
+# white = "#c5cddb"
+# yellow = "#d19a66"
+# 
+# [schemes.isabel_onedark.primary]
+# background = "#14171c"
+# foreground = "#b8bfe5"
+# 
+# [schemes.jan_cyberpunk.bright]
+# black = "#626483"
+# blue = "#58AFC2"
+# cyan = "#926BCA"
+# green = "#a6e22e"
+# magenta = "#472575"
+# red = "#fb007a"
+# white = "#f1f1f1"
+# yellow = "#f3e430"
+# 
+# [schemes.jan_cyberpunk.cursor]
+# cursor = "#fb007a"
+# text = "#070219"
+# 
+# [schemes.jan_cyberpunk.normal]
+# black = "#626483"
+# blue = "#58AFC2"
+# cyan = "#926BCA"
+# green = "#a6e22e"
+# magenta = "#583794"
+# red = "#fb007a"
+# white = "#d9d9d9"
+# yellow = "#f3e430"
+# 
+# [schemes.jan_cyberpunk.primary]
+# background = "#070219"
+# foreground = "#c0caf5"
+# 
+# [schemes.karla_z0mbi3_night.bright]
+# black = "#373542"
+# blue = "#5f90ea"
+# cyan = "#97f0f0"
+# green = "#6fb352"
+# magenta = "#8656e3"
+# red = "#e71c5b"
+# white = "#fdfcff"
+# yellow = "#ffb964"
+# 
+# [schemes.karla_z0mbi3_night.cursor]
+# cursor = "#8656e3"
+# text = "#0b0b12"
+# 
+# [schemes.karla_z0mbi3_night.normal]
+# black = "#2d2b36"
+# blue = "#5884d4"
+# cyan = "#7df0f0"
+# green = "#61b33e"
+# magenta = "#7a44e3"
+# red = "#e7034a"
+# white = "#faf7ff"
+# yellow = "#ffb964"
+# 
+# [schemes.karla_z0mbi3_night.primary]
+# background = "#0E1113"
+# foreground = "#afb1db"
+# 
+# [schemes.melissa_nord.bright]
+# black = "#4c566a"
+# blue = "#81a1c1"
+# cyan = "#8fbcbb"
+# green = "#a3be8c"
+# magenta = "#b48ead"
+# red = "#bf616a"
+# white = "#eceff4"
+# yellow = "#ebcb8b"
+# 
+# [schemes.melissa_nord.cursor]
+# cursor = "#81a1c1"
+# text = "#2e3440"
+# 
+# [schemes.melissa_nord.normal]
+# black = "#4c566a"
+# blue = "#81a1c1"
+# cyan = "#88c0d0"
+# green = "#a3be8c"
+# magenta = "#b48ead"
+# red = "#bf616a"
+# white = "#e5e9f0"
+# yellow = "#ebcb8b"
+# 
+# [schemes.melissa_nord.primary]
+# background = "#2e3440"
+# foreground = "#d8dee9"
+# 
+# [schemes.pamela_color_scheme.bright]
+# black = "#56687E"
+# blue = "#556FFF"
+# cyan = "#3FDCEE"
+# green = "#18E3C8"
+# magenta = "#B043D1"
+# red = "#FF4971"
+# white = "#BEBEC1"
+# yellow = "#FF8037"
+# 
+# [schemes.pamela_color_scheme.cursor]
+# cursor = "#FF4971"
+# text = "#1D1F28"
+# 
+# [schemes.pamela_color_scheme.normal]
+# black = "#3D4C5F"
+# blue = "#8897F4"
+# cyan = "#79E6F3"
+# green = "#5ADECD"
+# magenta = "#C574DD"
+# red = "#F37F97"
+# white = "#FDFDFD"
+# yellow = "#F2A272"
+# 
+# [schemes.pamela_color_scheme.primary]
+# background = "#1D1F28"
+# foreground = "#FDFDFD"
+# 
+# [schemes.silvia_gruvbox.bright]
+# black = "#a89984"
+# blue = "#83a598"
+# cyan = "#8ec07c"
+# green = "#b8bb26"
+# magenta = "#d3869b"
+# red = "#fb4934"
+# white = "#ebdbb2"
+# yellow = "#fabd2f"
+# 
+# [schemes.silvia_gruvbox.cursor]
+# cursor = "#fbf1c7"
+# text = "#282828"
+# 
+# [schemes.silvia_gruvbox.normal]
+# black = "#a89984"
+# blue = "#458588"
+# cyan = "#689d6a"
+# green = "#98971a"
+# magenta = "#b16286"
+# red = "#cc241d"
+# white = "#ebdbb2"
+# yellow = "#d79921"
+# 
+# [schemes.silvia_gruvbox.primary]
+# background = "#282828"
+# foreground = "#fbf1c7"
+# 
+# [schemes.z0mbi3_decay.bright]
+# black = "#3d414f"
+# blue = "#86aaec"
+# cyan = "#93cee9"
+# green = "#90ceaa"
+# magenta = "#c296eb"
+# red = "#dd6777"
+# white = "#cbced3"
+# yellow = "#ecd3a0"
+# 
+# [schemes.z0mbi3_decay.cursor]
+# cursor = "#a5b6cf"
+# text = "#0d0f18"
+# 
+# [schemes.z0mbi3_decay.normal]
+# black = "#3d414f"
+# blue = "#86aaec"
+# cyan = "#93cee9"
+# green = "#90ceaa"
+# magenta = "#c296eb"
+# red = "#dd6777"
+# white = "#cbced3"
+# yellow = "#ecd3a0"
+# 
+# [schemes.z0mbi3_decay.primary]
+# background = "#0d0f18"
+# foreground = "#a5b6cf"

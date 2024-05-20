@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+
+# Vars
+value="$(brightnessctl get)"
+max="$(brightnessctl max)"
+
+get_brightness () {
+  echo $value
+}
+
+get_icon () {
+  echo "󰃠"
+}
+
+get_percentage () {
+  echo "$(expr $(expr ${value} \* 100) / ${max})"
+}
+
+
+case "$1" in
+  --icon)
+	get_icon
+	;;
+  --percentage)
+	get_percentage
+	;;
+  --bri)
+	get_brightness
+	;;
+  --set)
+	arg=$(echo $2 | tr '.' ' ' | awk '{print $1}')
+    brightnessctl set $(expr $(expr $arg \* $max) / 100) >> log
+	;;
+esac

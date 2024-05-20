@@ -1,0 +1,80 @@
+#!/usr/bin/env bash
+
+bat=/sys/class/power_supply/BAT0/
+per="$(cat "$bat/capacity")"
+
+# Path to NID file
+script_dir="$(dirname "$0")"
+nid_file="$script_dir/nid_store.txt"
+
+# Update NID in file
+update_nid_file() {
+    echo "$1" > "$nid_file"
+}
+
+# Read NID from file
+if [ -f "$nid_file" ]; then
+    NID=$(cat "$nid_file")
+else
+    NID=0
+    update_nid_file $NID
+fi
+
+# Critical battery notification
+critical_battery() {
+  # Replace old notification if it exists, otherwise make new
+  if [ $NID != 0 ]; then
+    NID=$(notify-send --urgency=critical --print-id -r $NID "Battery Low ($per%)" "Connect Charger")
+    update_nid_file $NID
+  else
+    NID=$(notify-send --urgency=critical --print-id "Battery Low ($per%)" "Connect Charger")
+    update_nid_file $NID
+  fi
+}
+
+icon() {
+  if [ "$(cat $bat/status)" == "Charging" ]; then
+    # Clear notification
+    if [ $NID != 0 ]; then
+      notify-send --print-id --expire-time=1 -r $NID "Charging"
+      update_nid_file 0
+    fi
+    icon="󰂄"
+  elif [ "$(cat $bat/status)" == "Full" ]; then
+    icon="󰂄"
+  elif [ "$per" -gt "90" ]; then
+  	icon="󰁹"
+  elif [ "$per" -gt "80" ]; then
+  	icon="󰂁"
+  elif [ "$per" -gt "70" ]; then
+  	icon="󰂀"
+  elif [ "$per" -gt "60" ]; then
+  	icon="󰁿"
+  elif [ "$per" -gt "50" ]; then
+  	icon="󰁾"
+  elif [ "$per" -gt "40" ]; then
+  	icon="󰁽"
+  elif [ "$per" -gt "30" ]; then
+  	icon="󰁼"
+  elif [ "$per" -gt "20" ]; then
+  	icon="󰁻"
+  elif [ "$per" -gt "10" ]; then
+    critical_battery
+  	icon="󰁺"
+  elif [ "$per" -gt "0" ]; then
+    critical_battery
+  	icon="󰁺"
+  else
+    echo 󰂎 && exit
+  fi
+  echo "$icon"
+}
+
+percent() {
+  echo $per
+}
+
+[ "$1" = "--icon" ] && icon && exit
+[ "$1" = "--percent" ] && percent && exit
+[ "$1" = "--alert" ] && alert && exit
+exit

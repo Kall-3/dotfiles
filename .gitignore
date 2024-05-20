@@ -1,0 +1,16 @@
+# gitignore
+
+### .local files to ignore ###
+# .local/share/applications
+# .local/share/desktop-directories
+# .local/share/icons
+# .local/share/nvim
+# .local/share/Trash
+# .local/share/zathura
+
+### .config files to ignore ###
+# .config/gh
+# .config/github-copilot
+# .config/cat_installer
+# .config/dconf
+# .config/Discord

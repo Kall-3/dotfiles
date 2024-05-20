@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+net_stat () {
+    if [ $(cat /sys/class/net/w*/operstate) = down ]
+    then
+        echo "󰤮"
+    else
+        echo "󰤨"
+    fi
+}
+
+name() {
+    nmcli | grep "wlo1: connected to" | sed 's/connected to //'
+}
+
+case "$1" in
+	--icon)
+		net_stat;;
+    --name)
+        name;;
+esac
