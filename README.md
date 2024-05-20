@@ -7,7 +7,7 @@ Ensure you have the following installed:
 1. Git
 2. Stow
 
-dotfiles manage programs like neovim and alacritty, these programs are assumed installed.
+the config files touch programs like neovim and alacritty, so these programs are assumed installed.
 
 ## Installation
 
