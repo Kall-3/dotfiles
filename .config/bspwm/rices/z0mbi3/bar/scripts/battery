@@ -40,8 +40,6 @@ icon() {
       update_nid_file 0
     fi
     icon="󰂄"
-  elif [ "$(cat $bat/status)" == "Full" ]; then
-    icon="󰂄"
   elif [ "$per" -gt "90" ]; then
   	icon="󰁹"
   elif [ "$per" -gt "80" ]; then
