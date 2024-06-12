@@ -29,6 +29,6 @@ case "$1" in
 	;;
   --set)
 	arg=$(echo $2 | tr '.' ' ' | awk '{print $1}')
-    brightnessctl set $(expr $(expr $arg \* $max) / 100) >> log
+    brightnessctl set $(expr $(expr $arg \* $max) / 100)
 	;;
 esac
