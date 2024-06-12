@@ -3,16 +3,16 @@
 bat=/sys/class/power_supply/BAT0/
 per="$(cat "$bat/capacity")"
 
-# Path to NID file
+# Path to NID (notification id) file
 script_dir="$(dirname "$0")"
 nid_file="$script_dir/nid_store.txt"
 
-# Update NID in file
+# Update NID (notification id) in file
 update_nid_file() {
     echo "$1" > "$nid_file"
 }
 
-# Read NID from file
+# Read NID (notification id) from file
 if [ -f "$nid_file" ]; then
     NID=$(cat "$nid_file")
 else
@@ -33,7 +33,9 @@ critical_battery() {
 }
 
 icon() {
-  if [ "$(cat $bat/status)" == "Charging" ]; then
+  ## TODO: Add icons for charging AND full battery, Charging / Discharging / ?Full?
+  # if [ "$(cat $bat/status)" == "Charging" ]; then
+  if [ "$(cat $bat/status)" != "Discharging" ]; then
     # Clear notification
     if [ $NID != 0 ]; then
       notify-send --print-id --expire-time=1 -r $NID "Charging"

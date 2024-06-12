@@ -41,7 +41,7 @@ shift + alt + {c,r,d,v,s}
 
 # Hide/Show Bar (Polybar and/or eww)
 super + u 
-	HideBar -u 
+	HideBar -h 
 
 # Change transparency on focused window
 ctrl + alt + {plus,minus,t}

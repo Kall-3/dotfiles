@@ -23,3 +23,7 @@ require("Kojjan.plugins.nvim-tree") -- Tree like explorer
 require("Kojjan.plugins.lualine")   -- Statusline
 require("Kojjan.plugins.colorizer") -- Colors
 require("Kojjan.plugins.indent")    -- Automatic indentation
+require("Kojjan.plugins.notify")    -- Notifications
+
+-- LeetCode --
+require("Kojjan.LeetCode.leetcode") -- LeetCode problems

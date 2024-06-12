@@ -71,6 +71,11 @@ use("fatih/vim-go")
 
 use("nmac427/guess-indent.nvim")
 
+-- LeetCode --
+use("kawre/leetcode.nvim")
+use("MunifTanjim/nui.nvim")
+use("rcarriga/nvim-notify")
+
 -- if packer_bootstrap then;
 --     require("packer").sync()
 -- end

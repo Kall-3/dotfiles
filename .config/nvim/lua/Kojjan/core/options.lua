@@ -1,4 +1,5 @@
 local opt = vim.opt -- for conciseness
+local g = vim.g
 
 -- Relative lines
 opt.relativenumber = true
@@ -37,3 +38,6 @@ opt.splitbelow = true
 
 opt.iskeyword:append("-")
 
+-- LeetCode globals
+g.leetcode_browser = 'chrome'
+g.leetcode_user = 'Kojjan'
