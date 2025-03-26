@@ -4,7 +4,7 @@
 #			z0mbi3 config..
 
 # Show keybindings help
-alt + F1
+alt + 1
 	KeybindingsHelp
 
 # Open Terminal (alacritty)

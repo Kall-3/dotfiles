@@ -31,6 +31,7 @@ return packer.startup(function(use)
 use("wbthomason/packer.nvim")
 
 use("navarasu/onedark.nvim")        -- Dark theme
+use("catppuccin/nvim")              -- Catppuccin theme
 use("nvim-tree/nvim-tree.lua")      -- File explorer
 use("nvim-tree/nvim-web-devicons")  -- VS-Code like icons
 use("nvim-lualine/lualine.nvim")    -- Statusline

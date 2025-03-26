@@ -1,6 +1,6 @@
 # Start window manager
 
-setxkbmap -option caps:espace
+# setxkbmap -option caps:espace
 
 picom &
 sxhkd &

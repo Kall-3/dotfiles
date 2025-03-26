@@ -16,6 +16,10 @@ rice_dir="$HOME/.config/bspwm/rices/$RICETHEME"
 ## Fix java applications
 export _JAVA_AWT_WM_NONREPARENTING=1
 
+## Set keyboard layout
+setxkbmap -layout us -option
+xmodmap -e "clear Lock" -e "keycode 9 = Escape" -e "keycode 66 = Escape"
+
 #  ┬ ┬┌─┐┬─┐┬┌─┌─┐┌─┐┌─┐┌─┐┌─┐┌─┐
 #  ││││ │├┬┘├┴┐└─┐├─┘├─┤│  ├┤ └─┐
 #  └┴┘└─┘┴└─┴ ┴└─┘┴  ┴ ┴└─┘└─┘└─┘
@@ -23,8 +27,7 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 workspaces() {
 	name=1
 	for monitor in $(bspc query -M); do
-		bspc monitor "${monitor}" -n "$name" -d '1' '2' '3' '4' '5' '6'
-		#bspc monitor ${monitor} -n "$name" -d '' '' '' '' '' ''
+		bspc monitor "${monitor}" -n "$name" -d '1' '2' '3' '4' '5' '6' #bspc monitor ${monitor} -n "$name" -d '' '' '' '' '' ''
 		(( name++ ))
 	done
 }

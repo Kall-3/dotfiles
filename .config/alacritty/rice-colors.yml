@@ -323,4 +323,4 @@ schemes:
       text:	'#0d0f18'
 
 # Set the color scheme for the actual rice.
-colors: *z0mbi3_decay
+colors: *emilia_tokyo_night

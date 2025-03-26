@@ -17,6 +17,10 @@ if [ -d "$HOME/.local/bin" ] ;
 	then PATH="$HOME/.local/bin:$PATH"
 fi
 
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+
 #  ┬  ┌─┐┌─┐┌┬┐  ┌─┐┌┐┌┌─┐┬┌┐┌┌─┐
 #  │  │ │├─┤ ││  ├┤ ││││ ┬││││├┤ 
 #  ┴─┘└─┘┴ ┴─┴┘  └─┘┘└┘└─┘┴┘└┘└─┘
@@ -120,7 +124,7 @@ alias mirrors="sudo reflector --verbose --latest 5 --country 'United States' --a
 alias grub-update="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias update="yay -Syu && sudo pacman -Syu"
 alias clean="yay -Scc && sudo pacman -Scc"
-alias purge="sudo pacman -Rns $(pacman -Qtdq) ; sudo fstrim -av"
+alias purge="sudo pacman -Rns $(pacman -Qtdq)"
 
 alias ls='lsd -a --group-directories-first'
 # alias ls='ls --color=auto'
@@ -130,9 +134,9 @@ alias vim='nvim'
 
 alias grep='grep --color=auto'
 
-alias py='venv/bin/python'
-alias py-pip='venv/bin/pip'
-alias py-venv='python -m venv venv'
+alias py='.venv/bin/python'
+alias py-pip='.venv/bin/pip'
+alias py-venv='python -m venv .venv'
 
 #  ┌─┐┬ ┬┌┬┐┌─┐  ┌─┐┌┬┐┌─┐┬─┐┌┬┐
 #  ├─┤│ │ │ │ │  └─┐ │ ├─┤├┬┘ │ 
@@ -141,19 +145,4 @@ $HOME/.local/bin/colorscript -r
 
 eval "$(zoxide init --cmd cd zsh)"
 eval "$(fzf --zsh)"
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/usr/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/usr/etc/profile.d/conda.sh" ]; then
-        . "/usr/etc/profile.d/conda.sh"
-    else
-        export PATH="/usr/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
 
